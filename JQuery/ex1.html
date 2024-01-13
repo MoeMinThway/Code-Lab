@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>JQuery</title>
+    <style>
+        img {
+            width: 400px;
+
+        }
+
+        button {
+            color: red;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        img {
+            display: none;
+        }
+
+        .box {
+            width: 100px;
+            background-color: blue;
+            height: 100px;
+            position: absolute;
+
+        }
+    </style>
+</head>
+<!-- <h1 id="heading">Jquery Testing</h1> -->
+<div class="container">
+    <button id="show"> Show</button>
+    <button id="hide">Hide</button>
+    <button id="toggle">Toggle</button>
+    <button id="fateOut">Fate On</button>
+    <button id="fateIn">fate In</button>
+    <button id="animate">Animate</button>
+
+    <h1 id="change">Change</h1>
+    <button id="stop">Stop</button>
+    <div class="box" id="box"></div>
+</div>
+
+<body>
+
+    <img id="img" src="../Channal Project/image/71Jxq2p5YWL._AC_SX569_.jpg" alt="">
+</body>
+<script>
+    $(document).ready(function () {
+        $('#show').click(function () {
+            //1  $('#img').show()
+            $("#img").css("display", "block")
+        })
+    })
+
+    $(document).ready(function () {
+        $('#hide').click(function () {
+            $('#img').hide()
+        })
+    })
+
+    $(document).ready(function () {
+        $('#toggle').click(function () {
+            $('#img').toggle()
+        })
+    })
+
+    $(document).ready(function () {
+        $('#fateOut').click(function () {
+            $('#img').fadeOut();
+        })
+    })
+    $(document).ready(function () {
+        $('#fateIn').click(function () {
+            $('#img').fadeIn();
+        })
+    })
+
+
+    //  document.getElementById("heading").innerHTML = "Welcome to javaScipt ";
+    // $('#heading').html("Hello World");
+
+    // document.querySelector("#heading").addEventListener("click",function(){
+    //   1  document.querySelector('#heading').style.display ="none";
+    //   2 this.style.display = "none";
+    // })
+
+    // $("#heading").click(function () {
+    //     $(this).hide(1000, function () {
+    //         console.log("hiiden")
+    //     })
+    // })
+
+    // $(document).ready(function(){
+    //     $("#heading").mouseleave( function(){
+    //         $(this).hide(2000,function(){
+    //             console.log("I am ready")
+    //         })
+    //     })
+    // })
+
+    // $(document).ready(function () {
+    //         $("#heading").click(function () {
+    //             $(this).css("color","red")
+
+    //         })
+    //     })
+
+    $("#animate").click(function () {
+        $("#box").animate({
+            left: "200px",
+            bottom: "200px",
+            width: "+=150px",
+            height: "+=150px"
+
+
+        }, 4000,
+            function () {
+                console.log("animate")
+            }
+
+        )
+
+    })
+
+    $("#stop").click(function () {
+        $("#box").stop()
+
+
+    })
+
+
+    $("#change").click(function () {
+        $("#change").hide(200).show(2000).css("color", "red");
+
+    })
+
+
+
+
+
+
+</script>
+
+</html>

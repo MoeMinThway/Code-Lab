@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 1000px;
+        }
+        .table{
+           
+                border-collapse: collapse;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+           width: 100%;
+           
+            height: 100vh ;
+        }
+        .table thead{
+            background-color:  rgb(25, 60, 60);
+            color :rgb(161, 111, 111);
+           
+        }
+        .table tr,
+        .table td,
+        .table th{
+            padding: 10px 15px;
+            /* border: 1px solid black; */
+            
+        }
+        .table tbody tr:nth-child(even){
+            background-color: beige;
+        }
+        .table tbody tr:hover{
+            background-color: #eeee99;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table class="table" >
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+                <tr>
+                    <th>1</th>
+                    <th>Me Mina thway</th>
+                    <th>Mina@gmail.com</th>
+                    <th>Mandalay</th>
+                    <th>male</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>Aye aye</th>
+                    <th>Aye@gmail.com</th>
+                    <th>Yangon</th>
+                    <th>female</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>aung aung</th>
+                    <th>aung@gmail.com</th>
+                    <th>Lanmadaw</th>
+                    <th>male</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th>hsu hsu</th>
+                    <th>hsu@gmail.com</th>
+                    <th>shan</th>
+                    <th>female</th>
+                </tr>
+           
+        </table>
+    </div>
+</body>
+</html>

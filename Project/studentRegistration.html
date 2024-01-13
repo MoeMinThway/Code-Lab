@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devic name=" gender"e-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<style>
+   .title {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .form {
+        padding: 10px;
+        font-size: 10px;
+        border: 3px dotted blue;
+        border-radius: initial;
+        margin-left: 20%;
+        margin-right: 20%;
+
+    }
+
+
+    .first {
+
+
+        margin: 10px;
+        padding-left: 17px;
+
+    }
+
+    .second {
+        margin: 10px;
+        padding-left: 5px;
+    }
+
+    .email {
+        margin: 10px;
+        padding-left: 38px;
+    }
+
+    .moblieNumber {
+        margin: 10px;
+    }
+
+    .gender {
+
+        margin: 10px;
+
+    }
+
+    .date {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .address {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    div {
+        margin: 5px;
+        padding: 5px;
+    }
+    .city{
+        padding: 10px;
+    }
+    .state{
+        padding-left: 15px;
+    }
+    .other{
+        margin-left: 100px;
+    }
+    
+</style>
+
+<body>
+    <h3 class="title">Student Registration Form</h3>
+    <div class="form">
+
+        <div class="first">
+            <label for="firstName">First Name</label>
+            <input class="input" type="text" id="firstName" placeholder="First Name" width="10px"> (MAX 50 charater
+            allowed)
+        </div>
+
+        <div class="second">
+            <label for="secondName">Second Name</label>
+            <input type="text" id="secondName" placeholder="Second Name" width="10px"> (MAX 50 charater allowed)
+        </div>
+
+        <div class="email">
+            <label for="email">email </label>
+            <input type="email" id="email" placeholder="abc123@gmail.com" width="10px">
+        </div>
+
+        <div class="moblieNumber">
+            <label for="phNo">Phone Number</label>
+            <input type="number" id="phNo" placeholder="09xxxxxx" width="10px"> (10 digits allowed)
+        </div>
+
+        <div class="gender">
+            Gender
+            <input type="radio" id="male" width="1px" name="gender"> <label for="male">Male</label>
+            <input type="radio" id="female" width="1px" name="gender"> <label for="female">Female</label>
+        </div>
+
+        <div class="date">
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date" width="10px">
+        </div>
+
+        <div class="address">
+            <label for="address">Address</label>
+            <textarea id="address" cols="30" rows="2" placeholder="No , Street  , Region"></textarea>
+        </div>
+
+
+
+        <div>
+            <label class="city" for="city">City</label>
+            <input type="text" id="city" placeholder="Bangalore">(MAX 50 charater allowed)
+        </div>
+        <div>
+            <label for="pinCode">Pin Code</label>
+            <input type="number" id="pinCode" placeholder="12345">(10 digits allowed)
+        </div>
+        <div>
+             <label class="state" for="state">State</label>
+            <input type="text" id="state" placeholder="Kamataka">(MAX 50 charater allowed)
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <input type="text" id="country" placeholder="India">
+        </div>
+
+        <div>
+            <small style="font-size: 13px; text-decoration: underline;">Hobbies</small>               
+               <span class="draw">Drawing</span>    <input type="checkbox" name="" id="draw">
+            <span class="sing">Singing</span><input type="checkbox" name="" id="sing">
+          <span class="dance">Dancing</span>  <input type="checkbox" name="" id="dance">
+          <span class="sketch">Sketching</span>  <input type="checkbox" name="" id="sketch">
+     <div class="other">
+        <label for="other">other</label>
+        <input type="text" id="other" placeholder="eg. Teaching"> (MAX 50 charater allowed)
+     </div>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>

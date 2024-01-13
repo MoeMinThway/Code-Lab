@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>JQuery</title>
+</head>
+<body>
+    <h1 title="Code Lab">Welcome From Code Lab</h1>
+    <input type="text" id="userName">
+    <!-- <button onclick="register()">Register</button> -->
+        <button >Register</button>
+
+        <select name="" id="myFood">
+            <option value="apple">a</option>
+            <option value="banana">b</option>
+            <option value="coconut">c</option>
+        </select>
+</body>
+<script>
+    $(document).ready(function(){
+        // console.log($("h1").text())
+
+        $("button").click(function(){
+        //    console.log( $("input").val())
+         //   console.log($("h1").attr("title"))
+        })
+    })
+
+
+    $("button").click(function(){
+        console.log($("#myFood").val())
+      //  $("h1").html(" Update Value")
+        //  $("#userName").val("John Doe")
+        //   $("#myFood").val("coconut")
+        $("h1").attr("title","This is my son")
+        console.log($("h1").attr("title"))
+
+    })
+    
+  
+
+    // JS
+    // function register(){
+    //     console.log(document.getElementById("userName").value);
+    //     console.log("Edad");
+    // }
+  
+</script>
+</html>

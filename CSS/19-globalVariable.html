@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --background-white: white;
+            --background-dark : black;
+            --text-white: white;
+            --text-dark : black;
+            --text-red : red;
+    }
+    body{
+        background-color: aqua;
+    }
+    h1{
+        color: var(--text-warning);
+    }
+    .light_btn:focus{
+       background-color: var(--text-red);
+    }
+    .dark_btn:focus{
+        background-color: var(--background-white);
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Hello  Wclome</h1>
+    <button class="light_btn">Light btn</button>
+    <button class="dark_btn">dark btn</button>
+</body>
+</html>

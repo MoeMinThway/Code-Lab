@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .title {
+        background-color: antiquewhite;
+        display: inline-block;
+        padding: 30px;
+        border-radius: 10px;
+        width: 150px;
+        height: 50px;
+        
+    }
+
+    .btn {
+        padding: 10px;
+        background-color: aqua;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <!-- <h1 class="title">CODE LAB</h1>
+    <form action="">
+        <button type="button" class="btn" id="clickBtn">CLick Me</button>
+        <input type="submit" value="OK">  //form ,reload 
+
+    </form> -->
+    <h1 class="title">CODE LAB</h1>
+    <button type="button" id="red">Red</button>
+    <button type="button" id="blue">Blue</button>
+</body>
+<script>
+    // document
+    //     .getElementById("clickBtn")
+    //     .addEventListener("click", function () {
+    //         alert("HEllo WOrld")
+    //     })
+
+    let title = document.querySelector(".title")
+    document
+        .getElementById("red")
+        .addEventListener("click", function () {
+            title.style.color = "white"
+            title.innerHTML = "RED"
+            title.style.backgroundColor ="red"
+        })
+    document
+        .getElementById("blue")
+        .addEventListener("click", function () {
+            title.style.color = "white"
+            title.innerHTML = "BLUE"
+            title.style.backgroundColor ="blue"
+        })
+
+</script>
+
+</html>
